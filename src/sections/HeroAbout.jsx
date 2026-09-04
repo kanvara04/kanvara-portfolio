@@ -1,4 +1,4 @@
-import heroArtwork from "../assets/hero.png";
+import heroArtwork from "../assets/hero.jpg";
 import { education, profile } from "../data/site.js";
 import { ArrowIcon } from "../components/icons.jsx";
 
