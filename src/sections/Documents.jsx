@@ -43,6 +43,7 @@ export default function Documents({ onOpenDocument }) {
                       <div className="space-y-1 text-sm text-muted">
                         {doc.issued && <p>Issued {doc.issued}</p>}
                         {doc.validUntil && <p>Valid until {doc.validUntil}</p>}
+                        {doc.courseHours && <p>{doc.courseHours} completed</p>}
                       </div>
 
                       <div className="mt-5 border-t border-line pt-5">

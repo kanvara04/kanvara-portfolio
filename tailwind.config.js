@@ -2,8 +2,6 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 
-  darkMode: ["class", '[data-theme="dark"]'],
-
   theme: {
     extend: {
       colors: {
@@ -16,7 +14,6 @@ export default {
         ink: "rgb(var(--color-ink) / <alpha-value>)",
         accent: "rgb(var(--color-accent) / <alpha-value>)",
         accentInk: "rgb(var(--color-accent-ink) / <alpha-value>)",
-        white: "#FFFFFF",
       },
 
       fontFamily: {
@@ -38,10 +35,6 @@ export default {
       },
 
       keyframes: {
-        float: {
-          "0%, 100%": { transform: "translate3d(0, 0, 0) rotate(-1deg)" },
-          "50%": { transform: "translate3d(0, -12px, 0) rotate(1deg)" },
-        },
         drift: {
           "0%, 100%": { transform: "translate3d(0, 0, 0)" },
           "50%": { transform: "translate3d(10px, -8px, 0)" },
@@ -49,7 +42,6 @@ export default {
       },
 
       animation: {
-        float: "float 7s ease-in-out infinite",
         drift: "drift 9s ease-in-out infinite",
       },
     },

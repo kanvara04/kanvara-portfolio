@@ -90,11 +90,7 @@ export default function App() {
           />
         )}
         {view.type === "project" && (
-          <ProjectDetailPage
-            slug={view.slug}
-            onBack={backToHome}
-            onOpenDocument={openDocument}
-          />
+          <ProjectDetailPage slug={view.slug} onBack={backToHome} />
         )}
         {view.type === "document" && (
           <DocumentViewerPage id={view.id} onBack={backToHome} />

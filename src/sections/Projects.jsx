@@ -69,6 +69,13 @@ export default function Projects({ onOpenProject }) {
                     <p className="mt-7 text-xs font-semibold uppercase tracking-[0.18em] text-muted">
                       {project.category}
                     </p>
+                    {(project.roleSubtitle || project.role || project.period) && (
+                      <p className="mt-2 text-xs font-medium leading-5 text-charcoal">
+                        {project.roleSubtitle || project.role}
+                        {(project.roleSubtitle || project.role) && project.period ? " · " : ""}
+                        {project.period || ""}
+                      </p>
+                    )}
                     <h3 className={`mt-3 font-semibold tracking-[-0.04em] text-ink ${featured ? "text-3xl sm:text-4xl" : "text-2xl sm:text-3xl"}`}>
                       {project.title}
                     </h3>

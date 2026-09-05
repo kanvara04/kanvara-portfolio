@@ -112,14 +112,7 @@
     filter: blur(0.2px);
   }
 
-  .artwork-paper {
-    background:
-      radial-gradient(circle at 50% 48%, rgba(0, 0, 0, 0.04), transparent 54%),
-      #ffffff;
-  }
-
-  .project-placeholder,
-  .profile-placeholder {
+  .project-placeholder {
     background-color: rgb(var(--color-soft));
     background-image:
       radial-gradient(circle at 20% 20%, var(--spotlight), transparent 32%),
@@ -145,16 +138,6 @@
     box-shadow: 0 22px 60px rgb(var(--shadow-color) / 0.16);
   }
 
-  .text-outline {
-    color: transparent;
-    -webkit-text-stroke: 1.5px rgb(var(--color-ink));
-  }
-}
-
-@media (max-width: 640px) {
-  .text-outline {
-    -webkit-text-stroke-width: 1px;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

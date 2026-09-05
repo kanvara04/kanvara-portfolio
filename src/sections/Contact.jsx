@@ -4,17 +4,10 @@ import {
   DownloadIcon,
   LinkedInIcon,
   MailIcon,
+  PhoneIcon,
 } from "../components/icons.jsx";
 
-function ContactCard({
-  href,
-  title,
-  value,
-  external = false,
-  download = false,
-  icon,
-  featured = false,
-}) {
+function ContactCard({ href, title, value, external = false, icon }) {
   const CardTag = href ? "a" : "div";
 
   return (
@@ -22,43 +15,26 @@ function ContactCard({
       href={href}
       target={external && href ? "_blank" : undefined}
       rel={external && href ? "noopener noreferrer" : undefined}
-      download={download && href ? profile.cvFilename : undefined}
-      className={`group interactive-card flex items-center gap-5 rounded-2xl border p-6 ${
-        featured
-          ? "border-accent bg-accent text-accentInk shadow-soft"
-          : "border-line bg-surface text-ink"
-      } ${href ? "cursor-pointer" : ""}`}
+      className={`group interactive-card flex items-center gap-5 rounded-2xl border border-line bg-surface p-6 text-ink ${
+        href ? "cursor-pointer" : ""
+      }`}
     >
-      <span
-        className={`grid h-12 w-12 shrink-0 place-items-center rounded-full border ${
-          featured
-            ? "border-accentInk/15 bg-accentInk/10 text-accentInk"
-            : "border-line bg-soft text-ink"
-        }`}
-      >
+      <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full border border-line bg-soft text-ink">
         {icon}
       </span>
 
       <span className="min-w-0 flex-1">
-        <span
-          className={`block text-xs font-semibold uppercase tracking-[0.16em] ${
-            featured ? "text-accentInk/60" : "text-muted"
-          }`}
-        >
+        <span className="block text-xs font-semibold uppercase tracking-[0.16em] text-muted">
           {title}
         </span>
-        <span
-          className={`mt-1 block truncate text-base font-semibold ${
-            featured ? "text-accentInk" : "text-ink"
-          }`}
-        >
+        <span className="mt-1 block truncate text-base font-semibold text-ink">
           {value}
         </span>
       </span>
 
       {href && (
         <span className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
-          {download ? <DownloadIcon className="h-5 w-5" /> : <ArrowIcon />}
+          <ArrowIcon />
         </span>
       )}
     </CardTag>
@@ -78,18 +54,17 @@ export default function Contact() {
               Let&apos;s create something useful.
             </h2>
             <p className="mt-6 max-w-lg text-base leading-8 text-muted">
-              สามารถติดต่อเกี่ยวกับโอกาสฝึกงาน การร่วมพัฒนาโปรเจกต์ หรือสอบถามรายละเอียดเพิ่มเติมได้ผ่านช่องทางด้านข้าง
+              สามารถติดต่อเกี่ยวกับโอกาสฝึกงาน การร่วมพัฒนาโปรเจกต์
+              หรือสอบถามรายละเอียดเพิ่มเติมได้ผ่านช่องทางด้านข้าง
             </p>
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2">
             <ContactCard
-              href={profile.cv}
-              title="Curriculum Vitae"
-              value="Download CV (PDF)"
-              icon={<DownloadIcon />}
-              download
-              featured
+              href={profile.phoneHref}
+              title="Phone"
+              value={profile.phone}
+              icon={<PhoneIcon />}
             />
             <ContactCard
               href={`mailto:${profile.email}`}
@@ -119,7 +94,7 @@ export default function Contact() {
             download={profile.cvFilename}
             className="inline-flex items-center gap-2 font-semibold text-ink transition-opacity hover:opacity-60"
           >
-            Download CV
+            Download CV (PDF)
             <DownloadIcon className="h-4 w-4" />
           </a>
         </div>

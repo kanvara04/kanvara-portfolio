@@ -1,6 +1,6 @@
 # Kanvara Bonha Portfolio
 
-React + Vite + Tailwind CSS portfolio with persistent light/dark themes.
+React + Vite + Tailwind CSS portfolio with light/dark themes.
 
 ## Run locally
 
@@ -9,49 +9,32 @@ npm install
 npm run dev
 ```
 
-## Production test
+## Production check
 
 ```powershell
 npm run build
-npm run preview
+npm run lint
 ```
 
-## Included updates
+## Important files
 
-- Light and dark modes with a navbar toggle
-- Theme preference saved in `localStorage`
-- Browser title changed to `Kanvara Bonha`
-- New grayscale `KB` favicon
-- `src/assets/hero.png` displayed in the first section
-- Connected `Kanvara Bonha` heading without a forced line break
-- Subtle motion, hover effects, mesh background, and floating artwork
-- Downloadable CV card in the Contact section
-- CV file: `public/documents/Kanvara-Bonha-CV.pdf`
-- Certificate filename normalized for reliable deployment
-- Project report links fixed
-
-## Update profile links
-
-Edit `src/data/site.js` to change:
-
-- Email
-- LinkedIn URL
-- Location
-- GPAX or education details
+- `src/data/site.js` — portfolio content, project data, contact details
+- `src/sections/` — home page sections
+- `src/pages/ProjectDetailPage.jsx` — project detail layout
+- `public/documents/` — CV, certificates, and project reports
+- `src/assets/` — website images
 
 ## Replace the CV
 
-Replace this file while keeping the same filename:
+Keep the file name:
 
 ```text
 public/documents/Kanvara-Bonha-CV.pdf
 ```
 
-The Contact section will continue downloading the replacement automatically.
+Replacing that file is enough; no code change is required.
 
-## Deploy to Vercel
+## Notes
 
-Push the project to GitHub, import the repository in Vercel, and keep the default Vite settings:
-
-- Build command: `npm run build`
-- Output directory: `dist`
+The cleaned package intentionally excludes generated/development files such as
+`node_modules`, `dist`, and `.git`. Run `npm install` after extracting the ZIP.

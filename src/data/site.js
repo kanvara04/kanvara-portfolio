@@ -2,9 +2,10 @@ import awardPhoto from "../assets/recognition/it-empowering-day-2026-award.png";
 import gyoubuToolsStack from "../assets/projects/gyoubu-ai/tools-and-ai-stack.png";
 import gyoubuSummaryInsight from "../assets/projects/gyoubu-ai/summary-insight.png";
 import gyoubuMetadataDetails from "../assets/projects/gyoubu-ai/metadata-details.png";
-import phishingdetails from "../assets/projects/phishingcover.png";
-import phisingresults from "../assets/projects/phishing-results.png";
+import phishingCover from "../assets/projects/phishingcover.png";
+import phishingResults from "../assets/projects/phishing-results.png";
 import oracleThumb from "../assets/projects/oracle-ai-foundations.png";
+import awsCloudThumb from "../assets/certificates/aws-cloud-foundations.png";
 
 // -----------------------------------------------------------------------------
 // Site content
@@ -14,22 +15,22 @@ export const profile = {
   name: "Kanvara Bonha",
   initials: "KB",
   role: "Computer Science Student",
-  location: "Bangkok, Thailand",
-  school: "Bangkok University",
-  gpax: "3.12",
+  location: "Bangkae, Bangkok",
   email: "kanvara.bh@gmail.com",
+  phone: "(+66) 801094562",
+  phoneHref: "tel:+66801094562",
   linkedin: "https://www.linkedin.com/in/kanvara-bonha-548705411",
   linkedinLabel: "linkedin.com/in/kanvara-bonha",
   cv: "/documents/Kanvara-Bonha-CV.pdf",
   cvFilename: "Kanvara-Bonha-CV.pdf",
   bio: [
-    "Hi, I’m Kanvara — a Computer Science student at Bangkok University’s Faculty of Information Technology and Innovation.",
-    "My focus sits around data analytics, data science, data engineering, and applied AI. I like turning messy, real-world data into something a team can actually act on.",
-    "I’m an eager learner who’s always open to new challenges, hands-on experience, and exploring tools I haven’t touched yet.",
+    "Hi, I’m Kanvara — a Computer Science student at the School of Information Technology and Innovation, Bangkok University.",
+    "My interests center on data analytics, data science, data engineering, and applied AI. I enjoy transforming complex, raw data into insights that can support real decisions.",
+    "I’m an eager learner who is open to new challenges and hands-on experience, especially opportunities that let me explore new tools and technologies.",
   ],
   highlights: [
     { label: "School", value: "Bangkok University" },
-    { label: "Based in", value: "Bangkok, Thailand" },
+    { label: "Based in", value: "Bangkae, Bangkok" },
   ],
 };
 
@@ -37,7 +38,7 @@ export const navigation = [
   { id: "home", label: "Home" },
   { id: "projects", label: "Projects" },
   { id: "skills", label: "Skills" },
-  { id: "documents", label: "Certifications" }, 
+  { id: "documents", label: "Certifications" },
   { id: "recognition", label: "Recognition" },
   { id: "contact", label: "Contact" },
 ];
@@ -50,43 +51,55 @@ export const projects = [
   {
     slug: "gyoubu-ai",
     number: "01",
-    title: "Gyoubu AI",
+    title: "GIEWBU AI Project",
     category: "AI Conversation Intelligence",
-    status: "Best AI Prototype Award",
+    status: "In Progress",
+    period: "Jan 2026 - Present",
+    course: "CS 497 Computer Science Project I",
+    role: "AI Pipeline & Speech Processing",
+    roleSubtitle: "Backend Developer · Core Logic & API Integration",
+    roleDescription:
+      "รับผิดชอบส่วน AI และ Backend Core Logic ของระบบ ตั้งแต่การเชื่อมต่อโมเดลถอดเสียง การส่ง Transcript เข้าสู่โมเดลภาษา ไปจนถึงการจัดโครงสร้างผลวิเคราะห์สำหรับ API และ Dashboard",
+    responsibilities: [
+      "เชื่อมต่อ Typhoon AI สำหรับ Speech-to-Text และ Llama AI สำหรับวิเคราะห์บทสนทนาจากไฟล์เสียง Call Center",
+      "พัฒนา Backend Logic เพื่อดึงข้อมูลสินค้า ปัญหาที่ลูกค้าแจ้ง แนวทางแก้ไข และคะแนนประสิทธิภาพของพนักงานจาก Transcript",
+      "จัดโครงสร้างผลลัพธ์จาก AI ให้พร้อมเชื่อมต่อกับ API และนำไปแสดงผลต่อใน Dashboard",
+      "เรียนรู้และทดลองโมเดล AI ใหม่ภายในระยะเวลาโครงการ พร้อมปรับ Backend Requirement จาก Feedback ของอาจารย์ที่ปรึกษาและผู้ใช้งาน",
+    ],
     description:
-      "ระบบ AI สำหรับถอดเสียงบทสนทนาจากไฟล์เสียงของศูนย์บริการลูกค้า พร้อมวิเคราะห์อารมณ์ เจตนาการโทร แบรนด์และหมวดหมู่สินค้า ให้คะแนนคุณภาพบริการ (QA Score) และพยากรณ์ความพึงพอใจของลูกค้า (CSAT) ก่อนสรุปเป็นรายงานที่นำไปพัฒนาคุณภาพการให้บริการได้จริง",
+      "ระบบ AI สำหรับถอดเสียงและวิเคราะห์บทสนทนาจากศูนย์บริการลูกค้า โดยนำ Transcript ไปวิเคราะห์ข้อมูลสินค้า ปัญหาที่รายงาน แนวทางแก้ไข และประสิทธิภาพของพนักงาน เพื่อสรุปเป็นข้อมูลที่ทีมสามารถนำไปใช้ติดตามและปรับปรุงการบริการได้",
     overview:
-      "โครงการนี้เริ่มจากโจทย์ของศูนย์บริการลูกค้าธุรกิจเครื่องนอนที่มีไฟล์เสียงสะสมจำนวนมากแต่ไม่มีเวลามานั่งฟังทีละสาย Gyoubu AI จึงถูกออกแบบเป็น AI Voice Intelligence System ที่ถอดเสียงด้วย Typhoon ASR / Whisper large-v3 แยกผู้พูดด้วย pyannote แล้ววิเคราะห์เชิงลึกด้วย Llama 3.3 70B ผ่าน Groq Cloud ก่อนแสดงผลเป็น Dashboard และรายงานที่ทีมงานนำไปใช้ปรับปรุงคุณภาพบริการได้ทันที โครงงานนี้ได้รับรางวัล Best AI Prototype for Real-World Impact Award จากงาน IT Empowering Day 2026 in the Era of AI ของมหาวิทยาลัยกรุงเทพ",
-    tags: ["Python" , "FastAPI" , "Whisper" , "Typhoon ASR" , "Llama 3.3" , "pyannote" , "Next.js"],
+      "Gyoubu AI เป็นโครงการในรายวิชา CS 497 Computer Science Project I ที่พัฒนาระบบสำหรับประมวลผลบทสนทนาจาก Call Center โดยเชื่อมต่อ Typhoon AI สำหรับ Speech-to-Text และ Llama AI สำหรับวิเคราะห์ Transcript จากนั้น Backend จะจัดโครงสร้างข้อมูลสำคัญ เช่น รายละเอียดสินค้า ปัญหาที่ลูกค้าแจ้ง แนวทางแก้ไข และคะแนนประสิทธิภาพของพนักงาน เพื่อส่งต่อให้ส่วนแสดงผลและนำไปใช้วิเคราะห์เชิงธุรกิจต่อได้",
+    tags: ["Python", "Typhoon AI", "Llama AI", "Speech-to-Text", "API Integration", "Backend Logic"],
     cover: gyoubuSummaryInsight,
     coverAlt: "Gyoubu AI dashboard screenshot",
     gallery: [
       {
         src: gyoubuToolsStack,
-        alt: "Tools และ AI ที่ใช้ในโปรเจกต์ Gyoubu AI",
+        alt: "Tools and AI stack used in Gyoubu AI",
         caption:
-          "สแต็กเทคโนโลยีของระบบ ฝั่ง Backend ใช้ FastAPI , Uvicorn , SQLite ฝั่ง Frontend ใช้ Next.js , React , Tailwind CSS และฝั่ง AI ใช้ Typhoon ASR , Groq Whisper large-v3 , Llama 3.3 70B และ pyannote สำหรับแยกผู้พูด",
+          "ภาพรวมเครื่องมือและ AI stack ที่ใช้ในระบบสำหรับประมวลผลเสียง วิเคราะห์บทสนทนา และเชื่อมต่อผลลัพธ์เข้ากับ Backend และ Dashboard",
         span: "full",
       },
       {
         src: gyoubuSummaryInsight,
-        alt: "หน้าจอ Summary Insight วิเคราะห์บทสนทนาด้วย Llama 3.3",
+        alt: "Gyoubu AI summary insight dashboard",
         caption:
-          "ผลวิเคราะห์บทสนทนาด้วย Llama 3.3 — ตรวจจับหัวข้อ เจตนา คีย์เวิร์ดและความผิดปกติ พร้อมสรุป Key Insightและสิ่งที่ควรทำต่อให้ทีมงานอ่านได้ทันที",
+          "ตัวอย่างหน้าจอสรุปผลการวิเคราะห์บทสนทนา เพื่อให้ทีมสามารถดูประเด็นสำคัญและข้อมูลที่นำไปใช้ติดตามงานต่อได้ง่ายขึ้น",
         span: "half",
       },
       {
         src: gyoubuMetadataDetails,
-        alt: "หน้าจอ Metadata และข้อมูลการรับประกันของลูกค้า",
+        alt: "Gyoubu AI metadata and customer details",
         caption:
-          "ข้อมูล Metadata ของสาย (Agent,แบรนด์,สินค้า,QA Score,CSAT) เชื่อมโยงกับข้อมูลการรับประกันของลูกค้าในหน้าเดียวกัน",
+          "ตัวอย่างข้อมูล Metadata และรายละเอียดที่ระบบจัดโครงสร้างจากบทสนทนาเพื่อใช้ประกอบการวิเคราะห์ใน Dashboard",
         span: "half",
       },
       {
         src: awardPhoto,
-        alt: "ทีม Gyoubu AI รับรางวัล Best AI Prototype for Real-World Impact Award",
+        alt: "Gyoubu AI team at IT Empowering Day 2026",
         caption:
-          "ทีมงาน Gyoubu AI รับรางวัล Best AI Prototype for Real-World Impact Award จากงาน IT Empowering Day 2026 in the Era of AI มหาวิทยาลัยกรุงเทพ",
+          "Gyoubu AI ได้รับคัดเลือกเป็น Finalist (Top 5) ในงาน IT Empowering Day in the Era of AI ของมหาวิทยาลัยกรุงเทพ ปี 2026",
         span: "full",
       },
     ],
@@ -100,20 +113,30 @@ export const projects = [
     title: "Phishing Website Detection",
     category: "Machine Learning & Cybersecurity",
     status: "Data Mining Project",
+    period: "May 2026",
+    role: "Data Analyst",
+    roleSubtitle: "Dataset Analysis & Feature Interpretation",
+    roleDescription:
+      "รับผิดชอบการวิเคราะห์ชุดข้อมูลและตีความคุณลักษณะของข้อมูลสำหรับโมเดลตรวจจับเว็บไซต์ฟิชชิง รวมถึงการประเมินผลลัพธ์ของโมเดลเพื่อดูความเหมาะสมในการใช้งาน",
+    responsibilities: [
+      "วิเคราะห์ชุดข้อมูล PhiUSIIL จำนวน 188,636 URLs และ 51 features สำหรับการจำแนกเว็บไซต์ฟิชชิง",
+      "ใช้ Random Forest ใน Weka เพื่อสร้างและประเมินโมเดล Machine Learning",
+      "วิเคราะห์ผลลัพธ์ของโมเดลที่ทำ Accuracy ได้ 99.9979% โดยมี 4 false positives และ 0 false negatives",
+      "ใช้ Critical Thinking และ Problem Solving ในการตีความ features และให้ความสำคัญกับการลด false negatives ให้อยู่ที่ศูนย์",
+    ],
     description:
-      "โครงการจำแนกเว็บไซต์ฟิชชิงด้วยอัลกอริทึม Random Forest โดยวิเคราะห์ข้อมูล URL จำนวน 188,636 รายการจาก 51 คุณลักษณะ พร้อมประเมินประสิทธิภาพของโมเดลด้วย Accuracy, Precision, Recall และ F1-score เพื่อแยกเว็บไซต์ที่มีความเสี่ยงออกจากเว็บไซต์ปกติ",
+      "โครงการวิเคราะห์เว็บไซต์ฟิชชิงจากชุดข้อมูล PhiUSIIL จำนวน 188,636 URLs และ 51 คุณลักษณะ โดยใช้ Random Forest ใน Weka เพื่อจำแนกเว็บไซต์ที่มีความเสี่ยงออกจากเว็บไซต์ปกติ และประเมินผลจากค่าความแม่นยำของโมเดล",
     overview:
-      "โปรเจกต์นี้เปรียบเทียบแนวทาง data mining หลายแบบเพื่อจำแนกเว็บไซต์ฟิชชิงออกจากเว็บไซต์ปกติ โดยใช้ Random Forest เป็นโมเดลหลักและวัดผลด้วยชุดตัวชี้วัดมาตรฐาน เพื่อให้มั่นใจว่าโมเดลใช้งานได้จริงกับข้อมูล URL ขนาดใหญ่",
-    tags: ["Weka", "Random Forest", "Data Mining", "Machine Learning"],
-    cover: phishingdetails,
+      "โปรเจกต์นี้มุ่งวิเคราะห์คุณลักษณะของ URL และสร้างโมเดล Random Forest สำหรับตรวจจับเว็บไซต์ฟิชชิงจากข้อมูลขนาดใหญ่ ผลลัพธ์ของทีมมี Accuracy 99.9979% โดยพบ false positives 4 รายการและ false negatives 0 รายการ ซึ่งสะท้อนว่าการเลือกและตีความ features สามารถช่วยลดความเสี่ยงจากการพลาดเว็บไซต์ฟิชชิงได้อย่างมีประสิทธิภาพ",
+    tags: ["Weka", "Random Forest", "PhiUSIIL", "Data Mining", "Machine Learning"],
+    cover: phishingCover,
     coverAlt: "Phishing detection model results",
-    
     gallery: [
       {
-        src: phisingresults,
-        alt: "รายละเอียดโครงการ Phishing Detection",
+        src: phishingResults,
+        alt: "Phishing Website Detection evaluation results",
         span: "full",
-      }
+      },
     ],
     codeUrl: null,
     liveUrl: null,
@@ -136,14 +159,7 @@ export const skillGroups = [
   },
   {
     title: "Tools",
-    skills: [
-      "Git",
-      "GitHub",
-      "VS Code",
-      "Visual Studio",
-      "Weka",
-      "Docker",
-    ],
+    skills: ["Git", "GitHub", "VS Code", "Visual Studio", "Weka", "Docker"],
   },
   {
     title: "Soft Skills",
@@ -159,7 +175,7 @@ export const skillGroups = [
 
 export const education = {
   degree: "Bachelor of Science",
-  period: "2023 — Present",
+  period: "2023 - Present",
   major: "Computer Science",
   school: "Bangkok University",
   gpax: "3.12",
@@ -172,26 +188,35 @@ export const education = {
 export const documents = [
   {
     id: "oracle-ai-foundations",
-    type: "Certificate",
-    number: "01", 
-    organization: "ORACLE UNIVERSITY", 
-    title: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate", 
-    issued: "Nov 07, 2025", 
-    validUntil: "Nov 07, 2027", 
-    image: oracleThumb, 
+    number: "01",
+    organization: "Oracle",
+    title: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+    issued: "November 2025",
+    image: oracleThumb,
     file: "/documents/Oracle-AI-Foundations-Certificate.pdf",
+  },
+  {
+    id: "aws-cloud-foundations",
+    number: "02",
+    organization: "AWS Academy",
+    title: "AWS Academy Graduate - Cloud Foundations - Training Badge",
+    issued: "September 04, 2026",
+    courseHours: "20 hours",
+    credentialUrl: "https://www.credly.com/go/l0GW34Sl",
+    image: awsCloudThumb,
+    file: "/documents/AWS-Cloud-Foundations-Certificate.pdf",
   },
 ];
 
 export const recognition = [
   {
     year: "2026",
-    title: "Best AI Prototype for Real-World Impact Award",
-    event: "IT Empowering Day 2026 in the Era of AI",
-    organization: "Bangkok University",
+    title: "Finalist (Top 5)",
+    event: "Gyoubu - AI-Driven Industry Innovation",
+    organization: "IT Empowering Day in the Era of AI · Bangkok University",
     description:
-      "โปรเจกต์ Gyoubu AI ได้รับรางวัล Best AI Prototype for Real-World Impact Award จากงาน IT Empowering Day 2026 in the Era of AI ซึ่งจัดโดยคณะเทคโนโลยีสารสนเทศและนวัตกรรม มหาวิทยาลัยกรุงเทพ โดยพิจารณาจากแนวคิดการประยุกต์ใช้ AI วิเคราะห์บทสนทนาเสียงเพื่อสร้างข้อมูลเชิงลึกที่นำไปใช้ได้จริงในภาคธุรกิจ",
+      "โปรเจกต์ Gyoubu AI ได้รับคัดเลือกเป็นหนึ่งใน 5 ผลงานสุดท้ายจากผลงานที่ส่งเข้าร่วมภายในมหาวิทยาลัย โดยได้รับการยอมรับจากศักยภาพของแนวคิดในการนำ AI ไปประยุกต์ใช้กับกระบวนการทำงานในภาคอุตสาหกรรม",
     image: awardPhoto,
-    imageAlt: "ทีม Gyoubu AI รับรางวัล Best AI Prototype for Real-World Impact Award",
+    imageAlt: "Gyoubu AI team at IT Empowering Day 2026",
   },
 ];

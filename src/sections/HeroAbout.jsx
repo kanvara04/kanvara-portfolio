@@ -64,17 +64,13 @@ export default function HeroAbout({ onNavigate }) {
 
           <div className="relative mx-auto w-full max-w-[470px] lg:mx-0 lg:justify-self-end">
             <div className="absolute -inset-5 rounded-[2.5rem] border border-line/70" />
-            <div className="glass-panel relative overflow-hidden rounded-[2rem] border border-line p-5 shadow-glow sm:p-7">
-              <div className="artwork-paper relative grid aspect-square place-items-center overflow-hidden rounded-[1.5rem] border border-black/10">
-                <div className="absolute left-5 top-5 rounded-full border border-black/10 bg-white/80 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.18em] text-black/60 backdrop-blur">
-                  Data · AI · Build
-                </div>
+            <div className="glass-panel relative overflow-hidden rounded-[2rem] border border-line p-3 shadow-glow sm:p-4">
+              <div className="aspect-[4/5] overflow-hidden rounded-[1.5rem] border border-line bg-soft">
                 <img
                   src={heroArtwork}
-                  alt="Abstract layered technology illustration"
-                  className="w-[72%] animate-float drop-shadow-[0_24px_28px_rgba(0,0,0,0.22)]"
+                  alt="Portrait of Kanvara Bonha"
+                  className="h-full w-full object-cover transition-transform duration-700 hover:scale-[1.02]"
                 />
-                <div className="absolute bottom-5 right-5 h-12 w-12 rounded-full border border-black/10 bg-black/5" />
               </div>
             </div>
 
@@ -95,12 +91,12 @@ export default function HeroAbout({ onNavigate }) {
             About
           </p>
 
-          <div className="grid gap-6 lg:grid-cols-[1.3fr_0.9fr]">
+          <div className="space-y-5">
             <article className="interactive-card rounded-[2rem] border border-line bg-surface p-7 sm:p-10">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted">
                 Profile
               </p>
-              <h2 className="mt-4 whitespace-nowrap text-[clamp(1.9rem,4vw,3.4rem)] font-semibold tracking-[-0.055em] text-ink">
+              <h2 className="mt-4 text-[clamp(1.9rem,4vw,3.4rem)] font-semibold tracking-[-0.055em] text-ink">
                 About Kanvara Bonha
               </h2>
 
@@ -108,7 +104,11 @@ export default function HeroAbout({ onNavigate }) {
                 {profile.bio.map((paragraph, index) => (
                   <p
                     key={paragraph}
-                    className={index === 0 ? "text-lg leading-9 text-charcoal" : "mt-4 text-base leading-8 text-muted"}
+                    className={
+                      index === 0
+                        ? "text-lg leading-9 text-charcoal"
+                        : "mt-4 text-base leading-8 text-muted"
+                    }
                   >
                     {paragraph}
                   </p>
@@ -116,31 +116,34 @@ export default function HeroAbout({ onNavigate }) {
               </div>
             </article>
 
-            <aside className="interactive-card flex flex-col rounded-[2rem] border border-line bg-soft p-7 sm:p-9">
-              <div className="flex items-center justify-between gap-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted">
-                  Education
-                </p>
-                <span className="rounded-full border border-line bg-surface px-3 py-1 text-xs font-semibold text-charcoal">
-                  {education.period}
-                </span>
-              </div>
+            <aside className="interactive-card rounded-[2rem] border border-line bg-soft p-6 sm:p-8">
+              <div className="grid gap-6 sm:grid-cols-[1fr_auto] sm:items-end">
+                <div>
+                  <div className="flex flex-wrap items-center gap-3">
+                    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted">
+                      Education
+                    </p>
+                    <span className="rounded-full border border-line bg-surface px-3 py-1 text-xs font-semibold text-charcoal">
+                      {education.period}
+                    </span>
+                  </div>
 
-              <h3 className="mt-7 text-3xl font-semibold tracking-[-0.045em] text-ink">
-                {education.major}
-              </h3>
-              <p className="mt-2 text-sm text-muted">{education.school}</p>
-              <p className="mt-4 text-xs font-semibold uppercase tracking-[0.14em] text-muted">
-                {education.degree}
-              </p>
+                  <h3 className="mt-4 text-2xl font-semibold tracking-[-0.04em] text-ink sm:text-3xl">
+                    {education.major}
+                  </h3>
+                  <p className="mt-2 text-sm text-muted">
+                    {education.degree} · {education.school}
+                  </p>
+                </div>
 
-              <div className="mt-12 flex items-end justify-between border-t border-line pt-6 lg:mt-auto">
-                <span className="text-xs font-semibold uppercase tracking-[0.16em] text-muted">
-                  GPAX
-                </span>
-                <span className="text-5xl font-semibold tracking-[-0.06em] text-ink">
-                  {education.gpax}
-                </span>
+                <div className="sm:text-right">
+                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted">
+                    GPAX
+                  </p>
+                  <p className="mt-1 text-3xl font-semibold tracking-[-0.05em] text-ink">
+                    {education.gpax}
+                  </p>
+                </div>
               </div>
             </aside>
           </div>

@@ -34,18 +34,32 @@ export default function DocumentViewerPage({ id, onBack }) {
             {doc.title}
           </h1>
           <p className="mt-1 text-sm text-muted">
-            {doc.organization} · {doc.year}
+            {doc.organization}
+            {doc.issued ? ` · Issued ${doc.issued}` : ""}
+            {doc.courseHours ? ` · ${doc.courseHours}` : ""}
           </p>
         </div>
 
-        <a
-          href={doc.file}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 rounded-md border border-line bg-surface px-4 py-2 text-sm font-semibold text-ink transition-colors hover:bg-soft"
-        >
-          Open in new tab
-        </a>
+        <div className="flex flex-wrap gap-2">
+          {doc.credentialUrl && (
+            <a
+              href={doc.credentialUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-md border border-line bg-surface px-4 py-2 text-sm font-semibold text-ink transition-colors hover:bg-soft"
+            >
+              Verify credential
+            </a>
+          )}
+          <a
+            href={doc.file}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-md border border-line bg-surface px-4 py-2 text-sm font-semibold text-ink transition-colors hover:bg-soft"
+          >
+            Open in new tab
+          </a>
+        </div>
       </div>
 
       <div className="flex-1 bg-surface">
