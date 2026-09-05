@@ -7,7 +7,6 @@ export default function Documents({ onOpenDocument }) {
       <div className="page-shell py-20 sm:py-24 lg:py-28">
         <SectionHeader
           number="03"
-          eyebrow="Continuous Learning"
           title="Certifications"
         />
 

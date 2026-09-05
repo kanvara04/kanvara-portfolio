@@ -34,9 +34,7 @@ export default function Projects({ onOpenProject }) {
       <div className="page-shell py-20 sm:py-24 lg:py-28">
         <SectionHeader
           number="01"
-          eyebrow="Selected Work"
-          title="Projects with a practical purpose."
-          description="ผลงานที่แสดงกระบวนการตั้งแต่การวิเคราะห์โจทย์ การทดลองเทคโนโลยี ไปจนถึงการสรุปผลลัพธ์ให้ผู้ใช้งานเข้าใจได้ง่าย"
+          title="Projects"
         />
 
         <div className="mt-12 grid gap-6 lg:grid-cols-12">

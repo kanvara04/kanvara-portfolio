@@ -7,9 +7,7 @@ export default function Skills() {
       <div className="page-shell py-20 sm:py-24 lg:py-28">
         <SectionHeader
           number="02"
-          eyebrow="Capabilities"
-          title="A toolkit built through hands-on work."
-          description="ทักษะที่พัฒนาจากการเรียน การทำโปรเจกต์ และการทดลองใช้เครื่องมือในสถานการณ์จริง"
+          title="Skills"
         />
 
         <div className="mt-12 grid gap-4 md:grid-cols-2">
