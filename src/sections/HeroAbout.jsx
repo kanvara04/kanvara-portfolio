@@ -22,7 +22,7 @@ export default function HeroAbout({ onNavigate }) {
             </h1>
 
             <p className="mt-8 max-w-2xl text-xl font-medium leading-8 text-charcoal sm:text-2xl">
-              {profile.role} focused on data, applied AI, and practical digital products.
+              {profile.role} focused on data analytics, data science, data engineering, and applied AI.
             </p>
 
             <p className="mt-5 max-w-xl text-base leading-8 text-muted">

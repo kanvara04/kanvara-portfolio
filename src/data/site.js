@@ -24,9 +24,9 @@ export const profile = {
   cv: "/documents/Kanvara-Bonha-CV.pdf",
   cvFilename: "Kanvara-Bonha-CV.pdf",
   bio: [
-    "Hi, I’m Kanvara — a Computer Science student at the School of Information Technology and Innovation, Bangkok University.",
-    "My interests center on data analytics, data science, data engineering, and applied AI. I enjoy transforming complex, raw data into insights that can support real decisions.",
-    "I’m an eager learner who is open to new challenges and hands-on experience, especially opportunities that let me explore new tools and technologies.",
+    "A Computer Science student at the School of Information Technology and Innovation, Bangkok University with a strong commitment to Data Analytics, Data Science, Data Engineering and Applied AI.",
+    "Passionate about transforming complex, raw data into actionable insights.",
+    "An eager learner who is always open to new challenges and highly enthusiastic about gaining hands-on experience to explore new tools and technologies.",
   ],
   highlights: [
     { label: "School", value: "Bangkok University" },
@@ -51,26 +51,26 @@ export const projects = [
   {
     slug: "gyoubu-ai",
     number: "01",
-    title: "GIEWBU AI Project",
+    title: "GYOUBU AI Project",
     category: "AI Conversation Intelligence",
     status: "In Progress",
     period: "Jan 2026 - Present",
     course: "CS 497 Computer Science Project I",
-    role: "AI Pipeline & Speech Processing",
-    roleSubtitle: "Backend Developer · Core Logic & API Integration",
+    role: "Backend Developer",
+    roleSubtitle: "Core Logic & API Integration",
     roleDescription:
-      "รับผิดชอบส่วน AI และ Backend Core Logic ของระบบ ตั้งแต่การเชื่อมต่อโมเดลถอดเสียง การส่ง Transcript เข้าสู่โมเดลภาษา ไปจนถึงการจัดโครงสร้างผลวิเคราะห์สำหรับ API และ Dashboard",
+      "พัฒนา Backend Core Logic และเชื่อมต่อ API สำหรับวิเคราะห์บทสนทนาของ Call Center ด้วย AI",
     responsibilities: [
-      "เชื่อมต่อ Typhoon AI สำหรับ Speech-to-Text และ Llama AI สำหรับวิเคราะห์บทสนทนาจากไฟล์เสียง Call Center",
-      "พัฒนา Backend Logic เพื่อดึงข้อมูลสินค้า ปัญหาที่ลูกค้าแจ้ง แนวทางแก้ไข และคะแนนประสิทธิภาพของพนักงานจาก Transcript",
-      "จัดโครงสร้างผลลัพธ์จาก AI ให้พร้อมเชื่อมต่อกับ API และนำไปแสดงผลต่อใน Dashboard",
-      "เรียนรู้และทดลองโมเดล AI ใหม่ภายในระยะเวลาโครงการ พร้อมปรับ Backend Requirement จาก Feedback ของอาจารย์ที่ปรึกษาและผู้ใช้งาน",
+      "เชื่อมต่อ Typhoon AI สำหรับ Speech-to-Text และ Llama AI เพื่อวิเคราะห์บทสนทนาที่บันทึกไว้ของ Call Center",
+      "พัฒนา Backend Logic เพื่อดึงรายละเอียดสินค้า ปัญหาที่รายงาน แนวทางแก้ไข และคะแนนประสิทธิภาพพนักงานจาก Transcript",
+      "เรียนรู้และเชื่อมต่อโมเดล AI ใหม่เข้ากับระบบ API ที่ใช้งานได้ภายในระยะเวลาของโปรเจกต์",
+      "รับฟัง Feedback จากอาจารย์ที่ปรึกษาและผู้ใช้งานอย่างต่อเนื่อง เพื่อปรับปรุงข้อกำหนดของ Backend ให้ตรงความต้องการ",
     ],
     description:
-      "ระบบ AI สำหรับถอดเสียงและวิเคราะห์บทสนทนาจากศูนย์บริการลูกค้า โดยนำ Transcript ไปวิเคราะห์ข้อมูลสินค้า ปัญหาที่รายงาน แนวทางแก้ไข และประสิทธิภาพของพนักงาน เพื่อสรุปเป็นข้อมูลที่ทีมสามารถนำไปใช้ติดตามและปรับปรุงการบริการได้",
+      "ระบบวิเคราะห์บทสนทนา Call Center ด้วย Typhoon AI และ Llama AI เพื่อสกัดรายละเอียดสินค้า ปัญหา แนวทางแก้ไข และคะแนนประสิทธิภาพพนักงาน",
     overview:
-      "Gyoubu AI เป็นโครงการในรายวิชา CS 497 Computer Science Project I ที่พัฒนาระบบสำหรับประมวลผลบทสนทนาจาก Call Center โดยเชื่อมต่อ Typhoon AI สำหรับ Speech-to-Text และ Llama AI สำหรับวิเคราะห์ Transcript จากนั้น Backend จะจัดโครงสร้างข้อมูลสำคัญ เช่น รายละเอียดสินค้า ปัญหาที่ลูกค้าแจ้ง แนวทางแก้ไข และคะแนนประสิทธิภาพของพนักงาน เพื่อส่งต่อให้ส่วนแสดงผลและนำไปใช้วิเคราะห์เชิงธุรกิจต่อได้",
-    tags: ["Python", "Typhoon AI", "Llama AI", "Speech-to-Text", "API Integration", "Backend Logic"],
+      "GYOUBU AI เป็นโปรเจกต์ในรายวิชา CS 497 Computer Science Project I พัฒนาด้วย TypeScript, Python, PostgreSQL และ REST APIs โดยเชื่อมต่อ Typhoon AI สำหรับถอดเสียง และ Llama AI สำหรับวิเคราะห์ Transcript พร้อมพัฒนา Backend Core Logic เพื่อดึงข้อมูลจากบทสนทนา",
+    tags: ["TypeScript", "Python", "PostgreSQL", "REST APIs", "Typhoon AI", "Llama AI"],
     cover: gyoubuSummaryInsight,
     coverAlt: "Gyoubu AI dashboard screenshot",
     gallery: [
@@ -78,28 +78,28 @@ export const projects = [
         src: gyoubuToolsStack,
         alt: "Tools and AI stack used in Gyoubu AI",
         caption:
-          "ภาพรวมเครื่องมือและ AI stack ที่ใช้ในระบบสำหรับประมวลผลเสียง วิเคราะห์บทสนทนา และเชื่อมต่อผลลัพธ์เข้ากับ Backend และ Dashboard",
+          "เครื่องมือและ AI stack ที่ใช้ในโปรเจกต์ GYOUBU AI",
         span: "full",
       },
       {
         src: gyoubuSummaryInsight,
         alt: "Gyoubu AI summary insight dashboard",
         caption:
-          "ตัวอย่างหน้าจอสรุปผลการวิเคราะห์บทสนทนา เพื่อให้ทีมสามารถดูประเด็นสำคัญและข้อมูลที่นำไปใช้ติดตามงานต่อได้ง่ายขึ้น",
+          "หน้าจอสรุปผลการวิเคราะห์บทสนทนา Call Center",
         span: "half",
       },
       {
         src: gyoubuMetadataDetails,
         alt: "Gyoubu AI metadata and customer details",
         caption:
-          "ตัวอย่างข้อมูล Metadata และรายละเอียดที่ระบบจัดโครงสร้างจากบทสนทนาเพื่อใช้ประกอบการวิเคราะห์ใน Dashboard",
+          "หน้าจอแสดง Metadata และรายละเอียดที่ได้จากการวิเคราะห์",
         span: "half",
       },
       {
         src: awardPhoto,
         alt: "Gyoubu AI team at IT Empowering Day 2026",
         caption:
-          "Gyoubu AI ได้รับคัดเลือกเป็น Finalist (Top 5) ในงาน IT Empowering Day in the Era of AI ของมหาวิทยาลัยกรุงเทพ ปี 2026",
+          "ทีม GYOUBU AI ผ่านเข้ารอบ Finalist (Top 5) ในงาน IT Empowering Day in the Era of AI มหาวิทยาลัยกรุงเทพ ปี 2026",
         span: "full",
       },
     ],
@@ -117,17 +117,17 @@ export const projects = [
     role: "Data Analyst",
     roleSubtitle: "Dataset Analysis & Feature Interpretation",
     roleDescription:
-      "รับผิดชอบการวิเคราะห์ชุดข้อมูลและตีความคุณลักษณะของข้อมูลสำหรับโมเดลตรวจจับเว็บไซต์ฟิชชิง รวมถึงการประเมินผลลัพธ์ของโมเดลเพื่อดูความเหมาะสมในการใช้งาน",
+      "วิเคราะห์ Dataset และตีความคุณลักษณะของข้อมูลสำหรับโมเดลตรวจจับเว็บไซต์ Phishing",
     responsibilities: [
-      "วิเคราะห์ชุดข้อมูล PhiUSIIL จำนวน 188,636 URLs และ 51 features สำหรับการจำแนกเว็บไซต์ฟิชชิง",
-      "ใช้ Random Forest ใน Weka เพื่อสร้างและประเมินโมเดล Machine Learning",
-      "วิเคราะห์ผลลัพธ์ของโมเดลที่ทำ Accuracy ได้ 99.9979% โดยมี 4 false positives และ 0 false negatives",
-      "ใช้ Critical Thinking และ Problem Solving ในการตีความ features และให้ความสำคัญกับการลด false negatives ให้อยู่ที่ศูนย์",
+      "วิเคราะห์ชุดข้อมูล PhiUSIIL จำนวน 188,636 URLs และ 51 features สำหรับโมเดล Random Forest ใน Weka",
+      "วิเคราะห์และตีความ features ของชุดข้อมูลสำหรับโมเดลตรวจจับเว็บไซต์ Phishing",
+      "โมเดลของทีมได้ Accuracy 99.9979% โดยมี 4 false positives และ 0 false negatives",
+      "ใช้ Critical Thinking และ Problem Solving เพื่อประเมิน features และช่วยลด false negatives ให้เป็นศูนย์",
     ],
     description:
-      "โครงการวิเคราะห์เว็บไซต์ฟิชชิงจากชุดข้อมูล PhiUSIIL จำนวน 188,636 URLs และ 51 คุณลักษณะ โดยใช้ Random Forest ใน Weka เพื่อจำแนกเว็บไซต์ที่มีความเสี่ยงออกจากเว็บไซต์ปกติ และประเมินผลจากค่าความแม่นยำของโมเดล",
+      "วิเคราะห์ชุดข้อมูล PhiUSIIL สำหรับโมเดล Random Forest ใน Weka โดยโมเดลของทีมได้ Accuracy 99.9979% มี 4 false positives และ 0 false negatives",
     overview:
-      "โปรเจกต์นี้มุ่งวิเคราะห์คุณลักษณะของ URL และสร้างโมเดล Random Forest สำหรับตรวจจับเว็บไซต์ฟิชชิงจากข้อมูลขนาดใหญ่ ผลลัพธ์ของทีมมี Accuracy 99.9979% โดยพบ false positives 4 รายการและ false negatives 0 รายการ ซึ่งสะท้อนว่าการเลือกและตีความ features สามารถช่วยลดความเสี่ยงจากการพลาดเว็บไซต์ฟิชชิงได้อย่างมีประสิทธิภาพ",
+      "โปรเจกต์ตรวจจับเว็บไซต์ Phishing โดยวิเคราะห์ข้อมูล PhiUSIIL จำนวน 188,636 URLs และ 51 features สำหรับโมเดล Random Forest ใน Weka รับผิดชอบด้าน Dataset Analysis และ Feature Interpretation โดยโมเดลของทีมได้ Accuracy 99.9979% มี 4 false positives และ 0 false negatives",
     tags: ["Weka", "Random Forest", "PhiUSIIL", "Data Mining", "Machine Learning"],
     cover: phishingCover,
     coverAlt: "Phishing detection model results",
@@ -151,11 +151,11 @@ export const projects = [
 export const skillGroups = [
   {
     title: "Programming",
-    skills: ["Python", "JavaScript", "TypeScript", "CSS", "C#", "Dart"],
+    skills: ["Python", "JavaScript", "TypeScript", "C#"],
   },
   {
     title: "Database",
-    skills: ["MySQL", "MongoDB", "PostgreSQL", "Vector Database", "SQLite"],
+    skills: ["MySQL", "PostgreSQL", "Vector Database", "SQLite"],
   },
   {
     title: "Tools",
@@ -200,7 +200,7 @@ export const documents = [
     number: "02",
     organization: "AWS Academy",
     title: "AWS Academy Graduate - Cloud Foundations - Training Badge",
-    issued: "September 04, 2026",
+    issued: "September 2026",
     courseHours: "20 hours",
     credentialUrl: "https://www.credly.com/go/l0GW34Sl",
     image: awsCloudThumb,
@@ -215,7 +215,7 @@ export const recognition = [
     event: "Gyoubu - AI-Driven Industry Innovation",
     organization: "IT Empowering Day in the Era of AI · Bangkok University",
     description:
-      "โปรเจกต์ Gyoubu AI ได้รับคัดเลือกเป็นหนึ่งใน 5 ผลงานสุดท้ายจากผลงานที่ส่งเข้าร่วมภายในมหาวิทยาลัย โดยได้รับการยอมรับจากศักยภาพของแนวคิดในการนำ AI ไปประยุกต์ใช้กับกระบวนการทำงานในภาคอุตสาหกรรม",
+      "GYOUBU AI ได้รับคัดเลือกเป็น 1 ใน 5 โปรเจกต์จากผลงานที่ส่งเข้าร่วมทั่วมหาวิทยาลัย ในงาน IT Empowering Day in the Era of AI มหาวิทยาลัยกรุงเทพ ปี 2026 โดยได้รับการยอมรับถึงศักยภาพในการสร้างผลกระทบต่อกระบวนการทำงานในภาคอุตสาหกรรม",
     image: awardPhoto,
     imageAlt: "Gyoubu AI team at IT Empowering Day 2026",
   },
